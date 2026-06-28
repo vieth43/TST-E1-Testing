@@ -4,7 +4,10 @@ Repository zur Einsendeaufgabe TST-E1.
 
 Sprache: Java
 Build-Tool: Maven
-Testframeworks: JUnit 5 und Mockito
+Testframeworks: JUnit 5 und Mockito 
+
+Tests ausführen:
+mvn test
 
 A1 Unit-Tests für eigenen Code
 
