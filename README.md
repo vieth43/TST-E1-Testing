@@ -25,7 +25,9 @@ Als erstes Feature wurde das Hinzufügen eines Artikels umgesetzt. Zuerst wurde 
 
 Als zweites Feature wurde die Berechnung des Gesamtpreises umgesetzt. Auch hier wurde zuerst ein Test geschrieben, der zunächst fehlschlug, weil die Methode getTotalPrice() noch fehlte. Danach wurde die Berechnung des Gesamtpreises implementiert. Im Refactoring-Schritt wurde die Berechnung von einer Schleife auf eine Stream-basierte Lösung umgestellt, ohne das Verhalten des Programms zu ändern.
 
-Die relevanten Dateien für A2 sind ShoppingCart.java, CartItem.java und ShoppingCartTest.java.
+Die relevanten Dateien für A2 sind ShoppingCart.java, CartItem.java und ShoppingCartTest.java. 
+
+Die red-green-refactor-Schritte sind in der Git-History über die Commits mit dem Präfix A2 sichtbar.
 
 A3 Mocking
 
