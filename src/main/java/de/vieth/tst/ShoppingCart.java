@@ -5,10 +5,10 @@ import java.util.List;
 
 public class ShoppingCart {
 
-    private final List<String> items = new ArrayList<>();
+    private final List<CartItem> items = new ArrayList<>();
 
     public void addItem(String name, int quantity, double price) {
-        items.add(name);
+        items.add(new CartItem(name, quantity, price));
     }
 
     public int getItemCount() {
