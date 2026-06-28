@@ -15,7 +15,7 @@ Für A1 wurde ein einfacher Taschenrechner in der Klasse Calculator umgesetzt.
 
 Getestet wurden die Addition zweier Zahlen, die Division zweier Zahlen und eine Exception bei Division durch null. Der Exception-Test befindet sich in CalculatorTest und prüft mit assertThrows, dass bei einer Division durch null eine IllegalArgumentException ausgelöst wird.
 
-Die Tests können mit dem Befehl mvn test ausgeführt werden.
+
 
 A2 TDD – Shopping Cart
 
