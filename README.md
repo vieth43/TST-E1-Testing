@@ -37,7 +37,16 @@ Diese Methode wurde gemockt, weil eine echte Versandkostenabfrage in einem Unit-
 
 Im Test CheckoutServiceTest wird mit Mockito ein Mock von ShippingCostClient erzeugt. Für einen Warenkorbwert von 3,00 Euro wird als Versandkostenwert 4,99 Euro zurückgegeben. Anschließend wird geprüft, ob der berechnete Endpreis 7,99 Euro beträgt und ob die Methode getShippingCost(3.00) tatsächlich aufgerufen wurde.
 
-Die relevanten Dateien für A3 sind ShippingCostClient.java, CheckoutService.java und CheckoutServiceTest.java.
+Die relevanten Dateien für A3 sind ShippingCostClient.java, CheckoutService.java und CheckoutServiceTest.java. 
+
+Mock-Durchlauf
+
+Der Mocking-Test wurde mit dem Befehl mvn test ausgeführt. Dabei wurde auch CheckoutServiceTest erfolgreich ausgeführt. Der Test prüft, dass der gemockte ShippingCostClient für einen Warenkorbwert von 3,00 Euro Versandkosten von 4,99 Euro zurückgibt und dass getShippingCost(3.00) tatsächlich aufgerufen wurde.
+
+Ergebnis des Maven-Testlaufs:
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+BUILD SUCCESS
 
 AI-Nutzung
 
@@ -46,3 +55,9 @@ Für die Aufgabe wurde ChatGPT unterstützend verwendet. Ich habe mir von der AI
 Für A3 habe ich zusätzlich nach möglichen Ideen für einen sinnvollen Mocking-Anwendungsfall gefragt. Aus den Vorschlägen habe ich den externen Versandkostenservice ausgewählt, weil sich eine solche Abhängigkeit gut als unangenehme Methode erklären lässt.
 
 Bei der Umsetzung musste ich einzelne Punkte selbst korrigieren, zum Beispiel die richtige Ordnerstruktur für Testdateien unter src/test/java und die korrekte Einbindung von Mockito in der pom.xml.
+
+Mock-Durchlauf
+
+Der Mocking-Test wurde mit mvn test ausgeführt. Dabei wurde CheckoutServiceTest erfolgreich ausgeführt. Der Test prüft, dass der gemockte ShippingCostClient für einen Warenkorbwert von 3,00 Euro Versandkosten von 4,99 Euro zurückgibt und dass getShippingCost(3.00) tatsächlich aufgerufen wurde.
+
+Der Maven-Testlauf war erfolgreich.
