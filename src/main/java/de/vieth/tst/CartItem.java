@@ -10,5 +10,9 @@ public class CartItem {
         this.name = name;
         this.quantity = quantity;
         this.price = price;
-    }
+    } 
+
+    public double getTotalPrice() {
+    return quantity * price;
+}
 }

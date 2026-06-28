@@ -13,5 +13,15 @@ public class ShoppingCart {
 
     public int getItemCount() {
         return items.size();
+    } 
+
+    public double getTotalPrice() {
+    double sum = 0.0;
+
+    for (CartItem item : items) {
+        sum += item.getTotalPrice();
     }
+
+    return sum;
+}
 }
