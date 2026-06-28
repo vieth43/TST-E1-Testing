@@ -15,13 +15,9 @@ public class ShoppingCart {
         return items.size();
     } 
 
-    public double getTotalPrice() {
-    double sum = 0.0;
-
-    for (CartItem item : items) {
-        sum += item.getTotalPrice();
-    }
-
-    return sum;
+  public double getTotalPrice() {
+    return items.stream()
+            .mapToDouble(CartItem::getTotalPrice)
+            .sum();
 }
 }
